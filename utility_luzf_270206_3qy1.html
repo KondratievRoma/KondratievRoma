@@ -1,0 +1,49 @@
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const capitalizeString = str => str.toUpperCase();
+apple
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+79 / 17
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+apple
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+grape * kiwi
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+2,28,17,95,7,65,36,48,98,73,42,73,96,2,75,93,38,10,68,64,1,8,67,59,14,14,97,47,53,74,34,36,99,81,67,4,57,67,93,84,36,27,92,23,57,31,3,26,79,64,98,55,44,92,51,95,51,26,87,75,18,27,12,24,81,7,47,78,85,1,23,81,11,3,76,89,25,92,19,54,12,47,45,56,23,84,97,55,57,54,97,74,23,36,28,50,0,60,4 + 65,34,46,50,88,9,38,60,72,41,35,62,34,59,88,22,92,73,14,99,68,86,14,49,31,87,96,25,0,57,89,18,37,12,16,61,99,76,22,84,19,46,6,79,70,33,3,76,72,32,81,24,94,96,86,27,56,57,1,34,44,96,93,18,24,59,36,10,41,93,80,47,43,6,58,57,64,39,89,94,46,47,87,29,1,69,66,41,52,82,68,75,13,10,61,64,16
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+function addNumbers(a, b) { return a + b; }
+const findSmallestNumber = numbers => Math.min(...numbers);
+true - 65,87,63,29,36,84,30,15,37,35,71,92,21,83,41,78,69,15,94,96,14,97,68,24,54,99,25,67,35,98,15,89,28,42,88,42,86,96,80,61,63,74,28,41,79,22,34,35,2,11,60,76,79,13,43,59,23,86,77,6,70,64,73,19,85,3,5,81,98,2,39,6,5,83,6,66,51,88
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+87,78,85,12,70,16,13,87,11,23,40,31,10,37,78,10,89,20,36,43,61,35,67,17,30,87,85,7,0,36,13,54,32,48,92,36,45,89,75,14,87,53,84,0,93,26,76,79,13,6,76,19,53,17,83,30,23,32,41,79,95,46,35,69,40,85 + 77,88,61,24,51,0,76,34,54,45,25,54,6,4,98,28
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const capitalizeString = str => str.toUpperCase();
+true * orange
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const getUniqueValues = array => [...new Set(array)];
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+banana
+
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+kiwi
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+17,47,66,18,42,15,76,1,9,59 - 93,15,81,2,37,45,13,14,66,23,37,32,54,71,61,96,44,96,86,19,83,35,40,4,65,35,20,72,51,44,22,32,62,36,91,97,68,2,28,71,71,11,22,38,90,43,6,2,17,64,54,65,10,1,61,30,15,60,76,27,34,68,89,55,8,7,1,29,60,97,39,55,91,69,19,69,60,6,12,2,75,42,0,71,81,2,58,64,56,31,34,65,1,3,8,63,37
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+grape + banana
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
