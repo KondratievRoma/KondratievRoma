@@ -1,0 +1,34 @@
+kiwi - 14,46,52
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const reverseString = str => str.split("").reverse().join("");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const sum = (a, b) => a + b;
+const findSmallestNumber = numbers => Math.min(...numbers);
+15,87,50,33,32,9,87,76,15,51,81,84,35,35,19,59,96,24,68,22,9,28,99,12,94,28,21,89,45,15,37,99,40,60,42,68,64,85,28,25,2,4,91,87,5,64,61,84,47,12,71,56,76,21,31 + 88,39,95,63,41,0,80,68,74,81,95,7,25,6,28,95,16,71,21,40,50,10,93,63,31,12,62,5,98,62,69,41,41,14,53,75,73,37,26,0,4,60,60,28,96,22,81,19,86,8,33,57,9,56,3,39,39,74,87,73,0,79,64,37,70,98,98,23,23,70,45,47,15
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+8 + grape
+const formatDate = date => new Date(date).toLocaleDateString();
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+apple
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+kiwi
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const sum = (a, b) => a + b;
+const variableName = getRandomNumber();
+const sum = (a, b) => a + b;
+const getRandomElement = array => array[getRandomIndex(array)];
+false + false
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+true - false
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
